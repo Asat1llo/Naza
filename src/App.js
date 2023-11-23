@@ -1,3 +1,6 @@
+import styled, { createGlobalStyle } from "styled-components";
+
+ const GlobalStyle = createGlobalStyle` 
 *,
 *::before,
 *::after {
@@ -30,7 +33,10 @@ button {
 
 .container {
   max-width: 100%;
-  width: 1440px;
+  width: 1110px;
   margin: 0 auto;
   padding: 0 20px;
 }
+`
+
+export default GlobalStyle
