@@ -3,9 +3,7 @@ import { CounterBox } from "./counter"
 function Counter(){
     return(
        <section>
-        <CounterBox>
-          1
-        </CounterBox>
+        <CounterBox>0</CounterBox>
        </section>
     )
 }

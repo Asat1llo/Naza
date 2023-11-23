@@ -15,21 +15,37 @@ function Header() {
                     <Logo src={header1} />
                     <SelectDiv>
                      <Img src={header2}/>
-                     <SelectMenu >
-                        <Options value="menu">Выбрать модель телефона</Options>
-                        <Options value="menu1">menu1</Options>
-                        <Options value="menu2">menu2</Options>
+                     <SelectMenu name="menu" id="menu"  >
+                        <Options>Выбрать модель телефона</Options>
+                        <optgroup label="Apple">
+                        <Options value="menu1" >iPhone 12</Options>
+                        <Options value="menu1" >iPhone 12 Max</Options>
+                        <Options value="menu1" >iPhone 13</Options>
+                        <Options value="menu1" >iPhone 13 Max</Options>
+                        <Options value="menu1" >iPhone 13 Pro Max</Options>
+                        <Options value="menu1" >iPhone 14</Options>
+                        </optgroup>
+                        <optgroup label="Samsung">
+                        <Options value="menu2">S20</Options>
+                        <Options value="menu2">S20 Ultra</Options>
+                        <Options value="menu2">S21</Options>
+                        <Options value="menu2">S21 Ultra</Options>
+                        <Options value="menu2">S22</Options>
+                        <Options value="menu2">S22 Ultra</Options>
+                        <Options value="menu2">S23</Options>
+                        <Options value="menu2">S23 Ultra</Options>
+                        </optgroup>
                      </SelectMenu>
                     </SelectDiv>
                 </HeaderItem1>
                 <HeaderItem2>
                     <Imgdiv>
-                    <Img src={header3}/>
                     <Counter/>
+                    <Img src={header3}/>
                     </Imgdiv>
                     <Imgdiv>
-                    <Img src={header4}/>
                     <Counter/>
+                    <Img src={header4}/>
                     </Imgdiv>
                 </HeaderItem2>
             </HeaderBox>

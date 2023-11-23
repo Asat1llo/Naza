@@ -32,10 +32,13 @@ export const SelectMenu = styled.select`
   width:200px;
   height:20px; 
   border:none;
+
+  &:focus{
+    outline:none;
+  }
 `
 
 export const Options = styled.option`
- text-align:center;
  border:none;
  color: #101010;
 font-family: Montserrat;
@@ -53,4 +56,9 @@ export const HeaderItem2 = styled.div`
 `
 
 
-export const Imgdiv = styled.div``
+export const Imgdiv = styled.div`
+ display:flex;
+ align-items:center;
+ justify-contetn:space-between;
+ position:relative;
+`
