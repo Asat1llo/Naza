@@ -24,7 +24,6 @@ function Modal() {
             <ModalBox ref={elModal} >
                  <Btnclose onClick={onClose}><ImgBtn src={modal1}/></Btnclose>
                  <Form/>
-              <Btn onClick={onOpen}>Open</Btn>
             </ModalBox>
         </section>
     )

@@ -1,14 +1,6 @@
 import styled from "styled-components";
 
 
-export const CardsBox = styled.div`
- diplay:flex;
- flex-wrap:wrap;
- justify-contetn:space-between;
- align-items:center;
- gap:30px;
-`
-
 export const CardsDiv = styled.div`
  width:350px;
  height:407px;
@@ -22,7 +14,10 @@ export const CardsDiv = styled.div`
  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.10);
 `
 
-export const CardImg = styled.img``
+export const CardImg = styled.img`
+width: 219.608px;
+height: 237.451px;
+`
 
 export const CardDesc = styled.div`
  display:flex;

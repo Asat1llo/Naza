@@ -29,3 +29,37 @@ export const PostImg = styled.img`
  width:25px;
  height:25px;
 `
+
+
+export const PostFrom = styled.form`
+ width:100%;
+ height:100vh;
+ display:flex;
+ flex-direction:column;
+ justify-content:center;
+ align-items:start;
+ padding-left:10px;
+ gap:10px;
+`
+
+export const PostInput = styled.input`
+ width:300px;
+ height:50px;
+ border:none;
+ border-bottom:1px solid black;
+ background-color:transparent;
+ font-size:15px;
+
+ &:focus{
+   outline:none;
+ }
+`
+
+export const PostBtn = styled.button`
+ width:300px;
+ height:50px;
+ background-color:black;
+ border-radius:10px;
+ color:white;
+ font-size:20px;
+`
