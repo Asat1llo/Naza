@@ -1,7 +1,7 @@
 import Header from "../../components/header/header.jsx"
 import Swiperr from '../../components/swiper/swiper.jsx'
+import Post from "../../pages/post/post.jsx"
 import Footer from '../../components/footer/footer.jsx'
-import Modal from "../../components/modal/modal.jsx"
 
 
 const Home = () => {
@@ -9,7 +9,7 @@ const Home = () => {
         <>
             <Header />
             <Swiperr />
-            <Modal/>
+            <Post/>
              {/* <Footer /> */}
         </>
     )
