@@ -1,8 +1,8 @@
 import { PostBox, PostOpen, PostImg } from "./post"
 import { useRef } from "react"
 
-import post1 from "../../assets/img/open_post.png"
-import post2 from "../../assets/img/close_post.png"
+import post1 from "../../../assets/img/open_post.png"
+import post2 from "../../../assets/img/close_post.png"
 
 
 function Post() {

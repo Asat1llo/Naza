@@ -10,17 +10,15 @@ export const ModalBox = styled.div`
  flex-direction:column;
  justify-contetn:center;
  align-items:center;
- position: absolute;
- left:-270px;
+ position: fixed;
+ top:10px ;
+ left:-20%;
+ transition :0.5s linear; 
 `
-
-
-
 
 export const Btn = styled.button`
  position:fixed;
  right:50%;
- transition :0.5s linear; 
 `
 export const Btnclose = styled.button`
 transform: translate(400%,-8%);

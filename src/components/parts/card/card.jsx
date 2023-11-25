@@ -1,7 +1,7 @@
 import { CardsBox, CardsDiv, CardDesc, CardImg, CardDescItem, CardName,CardCost,CardRatingBox, CardRatingImg,CardRatingSpan } from "./card"
 
-import card1 from "../../assets/img/hand_phones.png"
-import card2 from "../../assets/svg/start_cards.svg"
+import card1 from "../../../assets/img/hand_phones.png"
+import card2 from "../../../assets/svg/start_cards.svg"
 
 function Card(){
     return(

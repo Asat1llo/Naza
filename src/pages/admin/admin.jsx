@@ -1,7 +1,8 @@
 import { AdminBox} from "./admin"
 
-import Card from "../../components/card/card.jsx"
-import Modal from "../../components/modal/modal.jsx"
+import Card from "../../components/parts/card/card.jsx"
+import Modal from "../../components/parts/modal/modal.jsx"
+import Post from "../../components/parts/post/post.jsx"
 
 
 function Admin(){
@@ -11,6 +12,7 @@ function Admin(){
           <AdminBox>
             <Card/>
             <Modal/>
+            <Post/>
           </AdminBox>
         </section>
     )
