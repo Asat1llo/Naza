@@ -8,7 +8,7 @@ import post1 from "../../../assets/img/open_post.png"
 import post2 from "../../../assets/img/close_post.png"
 
 
-function Post() {
+function Post({setLoading}) {
 
     const elOpen = useRef()
     const toast = useRef(null)
@@ -45,10 +45,12 @@ function Post() {
              body: JSON.stringify(data),
             }).then((res)=>{
                 showSuccess()
+                setLoading(true)
                 setName('')
                 setCost('')
                 setRating('')
                 setImg('')
+                elOpen.current.style.right = "-25%"
             })
         }
     }

@@ -20,24 +20,29 @@ function Form({ getitem, setOnpen, setLoading }) {
 
 
     const onUpdate = (id) => {
-        setLoading(true)
-        axios.put(`https://64c9fecab2980cec85c2b76e.mockapi.io/movie/phone/${id}`, {
-            name, cost, rating, img
-        }).then((res) => {
-            setOnpen(false)
-            setLoading()
-        })
+        if(name == "" || cost == "" || rating == "" || img == "" ){
+            console.log("error")
+        }
+        else{
+            setLoading(true)
+            axios.put(`https://64c9fecab2980cec85c2b76e.mockapi.io/movie/phone/${id}`, {
+                name, cost, rating, img
+            }).then((res) => {
+                setOnpen(false)
+                setLoading()
+            })
+        }
     }
 
-    // const onDelet = (id) => {
-    //     setLoading(true)
-    //     axios.delete(`https://64c9fecab2980cec85c2b76e.mockapi.io/movie/phone/${id}`)
-    //         .then((res) => {
-    //             console.log(res.data);
-    //             setOnpen(false)
-    //             setLoading(false)
-    //         })
-    // }
+    const onDelet = (id) => {
+        setLoading(true)
+        axios.delete(`https://64c9fecab2980cec85c2b76e.mockapi.io/movie/phone/${id}`)
+            .then((res) => {
+                console.log(res.data);
+                setOnpen(false)
+                setLoading(false)
+            })
+    }
 
     return (
         <section>
@@ -51,7 +56,8 @@ function Form({ getitem, setOnpen, setLoading }) {
                     evt.preventDefault()
                     onUpdate(getitem?.id)
                 }}>Update</ButtonBtn>
-                <ButtonDelet onClick={() => {
+                <ButtonDelet onClick={(evt) => {
+                    evt.preventDefault()
                     onDelet(getitem?.id)
                 }}>Delet</ButtonDelet>
             </FormBox>

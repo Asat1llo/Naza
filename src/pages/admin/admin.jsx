@@ -27,7 +27,7 @@ function Admin() {
       <AdminBox>
         <Card takedata={takedata} setGetitem={setGetitem} setOnpen={setOnpen} />
         <Modal Onpen={Onpen} setOnpen={setOnpen} getitem={getitem} setLoading={setLoading} />
-        <Post />
+        <Post setLoading={setLoading} />
       </AdminBox>
     </section>
   )

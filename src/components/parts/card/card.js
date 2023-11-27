@@ -21,6 +21,7 @@ export const CardsDiv = styled.div`
  align-items:center;
  gap:54px;
  border-radius:30px;
+ padding-top:25px;
  background: #FFF;
  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.10);
 `

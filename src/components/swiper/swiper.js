@@ -6,14 +6,12 @@ export const SwiperBox = styled.div`
  justify-contetn:center;
  align-items:center;
  padding-top:22px;
- padding-left:165px;
- padding-right:165px;
 `
 
 export const Swipeer = createGlobalStyle`
   
 .swiper {
-    width: 100%;
+    width: 1080px;
     height: 100%;
     background-color:black;
     border-radius:30px;

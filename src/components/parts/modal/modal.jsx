@@ -18,8 +18,8 @@ function Modal({  Onpen,  getitem, setOnpen, setLoading }) {
     }
     onOpen()
   }
-  else{
-    console.log("error");
+  else if (Onpen == false){
+    // elModal.current.style.left = "-20%"  
   }
 
 

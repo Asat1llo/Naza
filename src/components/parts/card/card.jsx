@@ -10,7 +10,7 @@ function Card({ takedata, setOnpen, setGetitem }) {
         <section>
             <CardsBox>
                 {
-                    takedata.map((item, index) => {
+                    takedata?.map((item, index) => {
                         return (
                             <CardsDiv key={item.id} onClick={()=>{
                                 setGetitem(item)
