@@ -18,7 +18,8 @@ export const PostOpen = styled.button`
  height:30px;
  background-color:white;
  border-radius:10px 0px 0px 10px;
- border:1px solid black;
+ border:1px  solid black;
+ border-right:1px solid white;
  position:absolute;
  left:-30px;
  top:-1px;

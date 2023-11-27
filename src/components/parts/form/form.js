@@ -29,3 +29,17 @@ export const ButtonBtn = styled.button`
  border-radius:15px;
  font-size:20px;
 `
+
+export const ButtonDelet = styled.button`
+ width:200px;
+ height:50px;
+ background-color:black;
+ color:white;
+ border-radius:15px;
+ font-size:20px;
+`
+
+export const FromId = styled.p`
+ font-size:20px;
+ color:black;
+`

@@ -1,4 +1,5 @@
 import { HeaderBox, HeaderItem1, Logo, SelectDiv , Img , SelectMenu, Options, HeaderItem2, Imgdiv} from "./header.js"
+import { NavLink as Link } from "react-router-dom"
 
 import Counter from "../parts/counter/counter.jsx"
 
@@ -12,7 +13,9 @@ function Header() {
         <section>
             <HeaderBox>
                 <HeaderItem1>
+                    <Link to={'/'}>
                     <Logo src={header1} />
+                    </Link>
                     <SelectDiv>
                      <Img src={header2}/>
                      <SelectMenu name="menu" id="menu"  >
