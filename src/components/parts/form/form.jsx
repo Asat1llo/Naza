@@ -1,6 +1,9 @@
 import axios from "axios"
 import { useRef, useState, useEffect } from "react"
 import { FormBox, InputText, ButtonBtn, ButtonDelet, FromId } from "./form"
+import { Toast } from 'primereact/toast';
+import 'primereact/resources/themes/lara-light-indigo/theme.css';
+import 'primereact/resources/primereact.min.css';
 
 
 function Form({ getitem, setOnpen, setLoading }) {
@@ -9,6 +12,7 @@ function Form({ getitem, setOnpen, setLoading }) {
     const [cost, setCost] = useState()
     const [rating, setRating] = useState()
     const [img, setImg] = useState()
+    const toast = useRef(null)
 
 
     useEffect(() => {
@@ -18,10 +22,19 @@ function Form({ getitem, setOnpen, setLoading }) {
         setImg(getitem?.img)
     }, [getitem?.id])
 
+    
+    const showError = () => {
+        toast.current.show({ severity: 'error', summary: 'Error', detail: 'Message Content', life: 3000 });
+    }
+    const showSuccess = () => {
+        toast.current.show({severity:'success', summary: 'Success', detail:'Message Content', life: 3000});
+    }
+    
+
 
     const onUpdate = (id) => {
         if(name == "" || cost == "" || rating == "" || img == "" ){
-            console.log("error")
+            showError()
         }
         else{
             setLoading(true)
@@ -30,6 +43,7 @@ function Form({ getitem, setOnpen, setLoading }) {
             }).then((res) => {
                 setOnpen(false)
                 setLoading()
+                showSuccess()
             })
         }
     }
@@ -41,12 +55,14 @@ function Form({ getitem, setOnpen, setLoading }) {
                 console.log(res.data);
                 setOnpen(false)
                 setLoading(false)
+                showSuccess()
             })
     }
 
     return (
         <section>
             <FormBox>
+            <Toast ref={toast} />
                 <FromId>{getitem?.id}</FromId>
                 <InputText type="text" placeholder="name" value={name} onChange={(e) => { setName(e.target.value) }} />
                 <InputText type="text" placeholder="cost" value={cost} onChange={(e) => { setCost(e.target.value) }} />

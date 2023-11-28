@@ -28,7 +28,10 @@ function Post({setLoading}) {
     const showSuccess = () => {
         toast.current.show({severity:'success', summary: 'Success', detail:'Message Content', life: 3000});
     }
+    
+    
 
+ 
     const data = {'name':name, 'cost':cost, 'rating':rating, 'img':img}
 
     const onPost = (evt)=>{

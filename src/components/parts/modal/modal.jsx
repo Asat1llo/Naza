@@ -7,7 +7,7 @@ import Form from "../form/form.jsx"
 import modal1 from "../../../assets/img/close.png"
 
 
-function Modal({  Onpen,  getitem, setOnpen, setLoading }) {
+function Modal({  Onpen,  getitem, setOnpen, setLoading, showError,showSuccess }) {
 
   const elModal = useRef()
 
@@ -31,7 +31,7 @@ function Modal({  Onpen,  getitem, setOnpen, setLoading }) {
     <section>
       <ModalBox ref={elModal} >
         <Btnclose onClick={onClose}><ImgBtn src={modal1} /></Btnclose>
-        <Form getitem={getitem} setOnpen={setOnpen} setLoading={setLoading}  />
+        <Form getitem={getitem} setOnpen={setOnpen} setLoading={setLoading} showError={showError} showSuccess={showSuccess}  />
       </ModalBox>
     </section>
   )

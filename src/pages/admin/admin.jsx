@@ -13,6 +13,7 @@ function Admin() {
   const [loading, setLoading] = useState()
   const [takedata, setTakedata] = useState([])
 
+
   const Fetch = () => {
     fetch("https://64c9fecab2980cec85c2b76e.mockapi.io/movie/phone")
       .then((res) => res.json())
@@ -27,7 +28,7 @@ function Admin() {
       <AdminBox>
         <Card takedata={takedata} setGetitem={setGetitem} setOnpen={setOnpen} />
         <Modal Onpen={Onpen} setOnpen={setOnpen} getitem={getitem} setLoading={setLoading} />
-        <Post setLoading={setLoading} />
+        <Post setLoading={setLoading}/>
       </AdminBox>
     </section>
   )
