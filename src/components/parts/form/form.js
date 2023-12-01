@@ -14,7 +14,7 @@ export const InputText = styled.input`
  width:200px;
  height:50px;
  border:none;
- border-bottom:1px solid black;
+ border-bottom:2px solid black;
  background-color:transparent;
  &:focus{
     outline:none;

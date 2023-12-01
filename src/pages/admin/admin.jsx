@@ -19,9 +19,12 @@ function Admin() {
       .then((res) => res.json())
       .then((data) => setTakedata(data))
   }
+
+
   useEffect(() => {
        Fetch()
   },[loading])
+
 
   return (
     <section>

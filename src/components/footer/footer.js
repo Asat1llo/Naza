@@ -1,16 +1,32 @@
 import styled from "styled-components";
 
-export const FooterBox = styled.div`
+export const FooterDiv = styled.div`
  display:flex;
- justify-content:space-between;
+ justify-content:center;
  align-items:center;
 `
+
+export const FooterBox = styled.div`
+width:1110px;
+display:flex;
+justify-content:space-between;
+align-items:start;
+border-radius: 30px 30px 0px 0px;
+background: #FFF;
+box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.10);
+padding-top:29px;
+padding-bottom:32px;
+padding-left:29px;
+padding-right:29px;
+`
+
+
 
 export const FooterBoxContact = styled.div`
  display:flex;
  flex-direction:column;
  justify-content:center;
- align-items:center;
+ align-items:start;
  gap:10px;
 `
 
@@ -46,7 +62,8 @@ font-size: 15px;
 font-style: normal;
 font-weight: 500;
 line-height: normal;
-&:hover{
+cursor:pointer;
+&:active{
     color: #FFA542;
 }
 `
@@ -56,7 +73,7 @@ export const FooterBoxLanguageItemImg = styled.img``
 export const FooterBoxWebs = styled.div`
 display:flex;
 justify-content:center;
-alig-items:center;
+align-items:end;
 gap:10px;
 `
 export const FooterBoxWebsImg = styled.img`

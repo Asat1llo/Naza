@@ -2,14 +2,15 @@ import styled from "styled-components";
 
 
 export const CardsBox = styled.div`
- padding-top:50px;
- width:100%;
- height:100vh;
- display:flex;
- flex-wrap:wrap;
- justify-content:center;
- align-items:center;
- gap:30px;
+width:100%;
+height:100vh;
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+align-items:center;
+gap:30px;
+padding-top:50px;
+padding-bottom:100%;
 `
 
 export const CardsDiv = styled.div`
@@ -22,8 +23,8 @@ export const CardsDiv = styled.div`
  gap:54px;
  border-radius:30px;
  padding-top:25px;
- background: #FFF;
  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.10);
+ background: #FFF;
 `
 
 export const CardImg = styled.img`

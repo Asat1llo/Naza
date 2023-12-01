@@ -4,10 +4,10 @@ import Card from "../../components/parts/card/card.jsx"
 
 const Home = () => {
     return (
-        <>
-            <Swiperr />
-            <Card/>
-        </>
+         <section>
+             <Swiperr />
+             <Card/>
+         </section>
     )
 }
 
