@@ -1,6 +1,6 @@
 import { FooterDiv, FooterBox, FooterBoxContact, FooterBoxContactText, FooterBoxLanguage, FooterBoxLanguageItem, FooterBoxLanguageItemImg, FooterBoxLanguageItemText, FooterBoxWebs, FooterBoxWebsImg } from "./footer"
 import { Logo } from "../header/header"
-
+import { NavLink as Link } from "react-router-dom"
 
 import footer1 from "../../assets/svg/world-footer.svg"
 import footer2 from "../../assets/img/wk-footer.png"
@@ -14,7 +14,9 @@ function Footer() {
         <section>
             <FooterDiv>
                 <FooterBox>
+                    <Link to={"/"}>
                     <Logo src={footer6} />
+                    </Link>
                     <FooterBoxContact>
                         <FooterBoxContactText>Избранное</FooterBoxContactText>
                         <FooterBoxContactText>Корзина</FooterBoxContactText>

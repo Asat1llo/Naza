@@ -9,7 +9,7 @@ export const PostBox = styled.div`
  background-color:white;
  position:fixed;
  top:10px ;
- right:-25%;
+ right:${({give})=>give};
  transition: 0.7s linear;
 `
 

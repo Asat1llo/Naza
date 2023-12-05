@@ -15,8 +15,8 @@ function Modal({ Onpen, getitem, setOnpen, setLoading, showError, showSuccess })
     elModal.current.style.left = "0"
   }
   
-  function Close2(){
-    elModal.current.style.left = "-20%"
+  const Close2 = ()=>{
+    elModal.left = "-20%"
   }
 
   if (Onpen == true) {

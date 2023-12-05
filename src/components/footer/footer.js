@@ -8,6 +8,8 @@ export const FooterDiv = styled.div`
 
 export const FooterBox = styled.div`
 width:1110px;
+position:fixed;
+bottom:0;
 display:flex;
 justify-content:space-between;
 align-items:start;

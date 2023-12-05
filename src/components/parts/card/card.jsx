@@ -1,7 +1,6 @@
 import { CardsBox, CardsDiv, CardDesc, CardImg, CardDescItem, CardName, CardCost, CardRatingBox, CardRatingImg, CardRatingSpan } from "./card"
 import { useState } from "react"
 
-import card1 from "../../../assets/img/hand_phones.png"
 import card2 from "../../../assets/svg/start_cards.svg"
 
 function Card({ takedata, setOnpen, setGetitem }) {
@@ -19,12 +18,12 @@ function Card({ takedata, setOnpen, setGetitem }) {
                                 <CardImg src={item.img} />
                                 <CardDesc>
                                     <CardDescItem>
-                                        <CardName>{item.name}</CardName>
-                                        <CardCost>{item.cost}₸</CardCost>
+                                        <CardName>{item?.name}</CardName>
+                                        <CardCost>{item?.cost}₸</CardCost>
                                     </CardDescItem>
                                     <CardRatingBox>
                                         <CardRatingImg src={card2} />
-                                        <CardRatingSpan>{item.rating}</CardRatingSpan>
+                                        <CardRatingSpan>{item?.rating}</CardRatingSpan>
                                     </CardRatingBox>
                                 </CardDesc>
                             </CardsDiv>

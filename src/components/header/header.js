@@ -46,6 +46,10 @@ font-size: 15px;
 font-style: normal;
 font-weight: 500;
 line-height: normal;
+
+&:hover{
+  backgrouond-color:#FFA542;
+}
 `
 
 export const HeaderItem2 = styled.div`
