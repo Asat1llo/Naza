@@ -1,5 +1,5 @@
 import { FooterDiv, FooterBox, FooterBoxContact, FooterBoxContactText, FooterBoxLanguage, FooterBoxLanguageItem, FooterBoxLanguageItemImg, FooterBoxLanguageItemText, FooterBoxWebs, FooterBoxWebsImg } from "./footer"
-import { Logo } from "../header/header"
+import { Logo } from "../header_box/header/header.js"
 import { NavLink as Link } from "react-router-dom"
 
 import footer1 from "../../assets/svg/world-footer.svg"
@@ -14,7 +14,7 @@ function Footer() {
         <section>
             <FooterDiv>
                 <FooterBox>
-                    <Link to={"home"}>
+                    <Link to={"/"}>
                     <Logo src={footer6} />
                     </Link>
                     <FooterBoxContact>
@@ -23,9 +23,7 @@ function Footer() {
                         <FooterBoxContactText>Контакты</FooterBoxContactText>
                     </FooterBoxContact>
                     <FooterBoxLanguage>
-                        <Link to={"admin"}>
                         <FooterBoxContactText>Условия сервиса</FooterBoxContactText>
-                        </Link>
                         <FooterBoxLanguageItem>
                             <FooterBoxLanguageItemImg src={footer1} />
                             <FooterBoxLanguageItemText>Uz</FooterBoxLanguageItemText>

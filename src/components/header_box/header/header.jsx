@@ -3,17 +3,17 @@ import { NavLink as Link } from "react-router-dom"
 
 import Counter  from "../counter/counter.jsx"
 
-import header1 from "../../assets/img/logo_header.png"
-import header2 from "../../assets/img/phone_header.png"
-import header3 from "../../assets/svg/heart_header.svg"
-import header4 from "../../assets/svg/bin_header.svg"
+import header1 from "../../../assets/img/logo_header.png"
+import header2 from "../../../assets/img/phone_header.png"
+import header3 from "../../../assets/svg/heart_header.svg"
+import header4 from "../../../assets/svg/bin_header.svg"
 
 function Header() {
     return (
         <section>
             <HeaderBox>
                 <HeaderItem1>
-                    <Link to={'home'}>
+                    <Link to={'/'}>
                     <Logo src={header1} />
                     </Link>
                     <SelectDiv>

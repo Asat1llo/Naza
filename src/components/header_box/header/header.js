@@ -18,7 +18,9 @@ export const HeaderItem1 = styled.div`
 
 export const Logo = styled.img``
 
-export const Img = styled.img``
+export const Img = styled.img`
+ cursor:pointer;
+`
 
 export const SelectDiv = styled.div`
  display:flex;
@@ -32,6 +34,7 @@ export const SelectMenu = styled.select`
   width:200px;
   height:20px; 
   border:none;
+  cursor:pointer;
 
   &:focus{
     outline:none;

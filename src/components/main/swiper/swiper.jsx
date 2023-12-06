@@ -1,15 +1,15 @@
-import { SwiperBox, Swipeer } from "./swiper"
-import { Img } from "../header/header";
+import { SwiperBox, Swipeer } from "./swiper.js"
+import { Img } from "../../header_box/header/header.js";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 import 'swiper/css';
 
-import swiper1 from "../../assets/img/iphone.avif"
-import swiper2 from "../../assets/img/iphone_12.avif"
-import swiper3 from "../../assets/img/s21.avif"
-import swiper4 from "../../assets/img/s20.webp"
-import swiper5 from "../../assets/img/moder_phone.jpg"
-import swiper6 from "../../assets/img/s10.jpg"
+import swiper1 from "../../../assets/img/iphone.avif"
+import swiper2 from "../../../assets/img/iphone_12.avif"
+import swiper3 from "../../../assets/img/s21.avif"
+import swiper4 from "../../../assets/img/s20.webp"
+import swiper5 from "../../../assets/img/moder_phone.jpg"
+import swiper6 from "../../../assets/img/s10.jpg"
 
 
 function Swiperr(){

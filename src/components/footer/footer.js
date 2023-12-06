@@ -39,6 +39,7 @@ font-size: 17px;
 font-style: normal;
 font-weight: 400;
 line-height: normal;
+cursor:pointer;
 `
 
 export const FooterBoxLanguage = styled.div`
@@ -70,7 +71,9 @@ cursor:pointer;
 }
 `
 
-export const FooterBoxLanguageItemImg = styled.img``
+export const FooterBoxLanguageItemImg = styled.img`
+cursor:pointer;
+`
 
 export const FooterBoxWebs = styled.div`
 display:flex;
@@ -81,4 +84,5 @@ gap:10px;
 export const FooterBoxWebsImg = styled.img`
  width:30px;
  height:30px;
+ cursor:pointer;
 `

@@ -1,13 +1,11 @@
 import { Outlet } from "react-router-dom";
-import Header from "../components/header/header.jsx"
-import Footer from "../components/footer/footer.jsx"
-import Swiperr from "../components/swiper/swiper.jsx";
+import Header from "../components/header_box/header/header.jsx";
+import Footer from "../components/footer/footer.jsx"    
 
 const Layout = () => {
     return (
         <>
             <Header />
-            <Swiperr />
             <Outlet />
             <Footer />
         </>
