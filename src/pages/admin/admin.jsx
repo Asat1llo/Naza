@@ -12,7 +12,12 @@ function Admin() {
   const [Onpen, setOnpen] = useState(false)
   const [loading, setLoading] = useState()
   const [takedata, setTakedata] = useState([])
+  const elModal = useRef()
 
+
+  const onClose = () => {
+    elModal.current.style.left = "-20%"
+  }
 
   const Fetch = () => {
     fetch("https://64c9fecab2980cec85c2b76e.mockapi.io/movie/phone")
@@ -22,15 +27,15 @@ function Admin() {
 
 
   useEffect(() => {
-       Fetch()
-  },[loading])
+    Fetch()
+  }, [loading])
 
 
   return (
     <section>
-      <AdminBox>
-        <Card takedata={takedata} setGetitem={setGetitem} setOnpen={setOnpen} />
-        <Modal Onpen={Onpen} setOnpen={setOnpen} getitem={getitem} setLoading={setLoading} />
+      <AdminBox >
+        <Card takedata={takedata} setGetitem={setGetitem} setOnpen={setOnpen} onClose={onClose} />
+        <Modal Onpen={Onpen} setOnpen={setOnpen} getitem={getitem} setLoading={setLoading} elModal={elModal} onClose={onClose} />
         <Post setLoading={setLoading}/>
       </AdminBox>
     </section>

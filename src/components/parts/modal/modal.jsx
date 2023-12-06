@@ -7,9 +7,8 @@ import Form from "../form/form.jsx"
 import modal1 from "../../../assets/img/close.png"
 
 
-function Modal({ Onpen, getitem, setOnpen, setLoading, showError, showSuccess }) {
+function Modal({ Onpen, getitem, setOnpen, setLoading, showError, showSuccess, elModal, onClose }) {
 
-  const elModal = useRef()
 
   const onOpen = () => {
     elModal.current.style.left = "0"
@@ -27,11 +26,6 @@ function Modal({ Onpen, getitem, setOnpen, setLoading, showError, showSuccess })
   }
   else {
     console.log("error");
-  }
-
-
-  const onClose = () => {
-    elModal.current.style.left = "-20%"
   }
 
   return (

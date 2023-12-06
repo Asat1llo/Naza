@@ -1,24 +1,21 @@
 import { Route, Routes } from 'react-router-dom'
 
 import GlobalStyle from "./App.js"
-import Home from './pages/home/home.jsx'
-import Header from './components/header/header.jsx'
-import Footer from './components/footer/footer.jsx'
+import Card from './components/parts/card/card.jsx'
 import Admin from './pages/admin/admin.jsx'
-
-
+import { Layout } from './pages/laoute.jsx'
 
 
 function App() {
 
   return (
     <>
-      <Header />
       <Routes>
-        <Route path='/' element={<Home />} />
-        <Route path='/admin' element={<Admin />} />
+        <Route path='/' element={<Layout />}>
+          <Route path='home' element={<Card />} />
+          <Route path='admin' element={<Admin />} />
+        </Route>
       </Routes>
-      <Footer/>
       <GlobalStyle />
     </>
   )

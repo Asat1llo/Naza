@@ -14,7 +14,7 @@ function Footer() {
         <section>
             <FooterDiv>
                 <FooterBox>
-                    <Link to={"/"}>
+                    <Link to={"home"}>
                     <Logo src={footer6} />
                     </Link>
                     <FooterBoxContact>
@@ -23,7 +23,9 @@ function Footer() {
                         <FooterBoxContactText>Контакты</FooterBoxContactText>
                     </FooterBoxContact>
                     <FooterBoxLanguage>
+                        <Link to={"admin"}>
                         <FooterBoxContactText>Условия сервиса</FooterBoxContactText>
+                        </Link>
                         <FooterBoxLanguageItem>
                             <FooterBoxLanguageItemImg src={footer1} />
                             <FooterBoxLanguageItemText>Uz</FooterBoxLanguageItemText>

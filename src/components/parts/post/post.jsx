@@ -5,12 +5,11 @@ import 'primereact/resources/themes/lara-light-indigo/theme.css';
 import 'primereact/resources/primereact.min.css';
 
 import post1 from "../../../assets/img/open_post.png"
-import post2 from "../../../assets/img/close_post.png"
+import post2 from "../../../assets/img/close.png"
 
 
 function Post({ setLoading }) {
 
-    const elOpen = useRef()
     const toast = useRef(null)
     const [give, setGive] = useState("-25%")
     const [imag, setImag] = useState(post1)
@@ -39,7 +38,7 @@ function Post({ setLoading }) {
         else if (imag == post2) {
             setImag(post1)
         }
-        else{
+        else {
             console.log("error");
         }
     }
@@ -84,11 +83,11 @@ function Post({ setLoading }) {
     return (
         <section>
             <Toast ref={toast} />
-            <PostBox ref={elOpen} give={give}>
-                <PostOpen onClick={() => { 
-                    onOpen(give) 
+            <PostBox give={give}>
+                <PostOpen onClick={() => {
+                    onOpen(give)
                     onImg(imag)
-                    }}>
+                }}>
                     <PostImg src={imag} />
                 </PostOpen>
                 <PostFrom>

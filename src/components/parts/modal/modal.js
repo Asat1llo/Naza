@@ -22,7 +22,6 @@ export const Btn = styled.button`
 `
 export const Btnclose = styled.button`
 transform: translate(400%,-8%);
-background-color:black;
 border-radius:50%;
 `
 

@@ -13,7 +13,7 @@ function Header() {
         <section>
             <HeaderBox>
                 <HeaderItem1>
-                    <Link to={'/'}>
+                    <Link to={'home'}>
                     <Logo src={header1} />
                     </Link>
                     <SelectDiv>

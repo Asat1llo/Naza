@@ -15,6 +15,8 @@ export const Swipeer = createGlobalStyle`
     height: 100%;
     background-color:black;
     border-radius:30px;
+
+    z-index:-1; 
   }
   
   .swiper-slide {

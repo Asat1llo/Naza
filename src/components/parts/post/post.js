@@ -6,7 +6,7 @@ export const PostBox = styled.div`
  height:100vh;
  border:1px solid black;
  border-radius:0px 0px 0px 10px;
- background-color:white;
+ background-color:transparent;
  position:fixed;
  top:10px ;
  right:${({give})=>give};
@@ -16,7 +16,7 @@ export const PostBox = styled.div`
 export const PostOpen = styled.button`
  width:30px;
  height:30px;
- background-color:white;
+ background-color:transparent;
  border-radius:10px 0px 0px 10px;
  border:1px  solid black;
  border-right:1px solid white;
