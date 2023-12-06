@@ -1,13 +1,15 @@
 import { CardsBox, CardsDiv, CardDesc, CardImg, CardDescItem, CardName, CardCost, CardRatingBox, CardRatingImg, CardRatingSpan } from "./card"
-import card2 from "../../../assets/svg/start_cards.svg"
 
-function Card({ takedata, setOnpen, setGetitem, onClose }) {
+import card2 from "../../assets/svg/start_cards.svg"
+
+
+function Card() {
 
     return (
         <section>
             <CardsBox onClick={onClose}>
                 {
-                    takedata?.map((item, index) => {
+                    data?.map((item, index) => {
                         return (
                             <CardsDiv key={item.id} onClick={() => {
                                 setGetitem(item)

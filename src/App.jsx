@@ -1,10 +1,8 @@
 import { Route, Routes } from 'react-router-dom'
 
 import GlobalStyle from "./App.js"
-import Card from './components/parts/card/card.jsx'
-import Admin from './pages/admin/admin.jsx'
+import Card from './components/card/card.jsx'
 import { Layout } from './pages/laoute.jsx'
-
 
 function App() {
 
@@ -13,7 +11,6 @@ function App() {
       <Routes>
         <Route path='/' element={<Layout />}>
           <Route path='home' element={<Card />} />
-          <Route path='admin' element={<Admin />} />
         </Route>
       </Routes>
       <GlobalStyle />

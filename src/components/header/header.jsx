@@ -1,7 +1,7 @@
 import { HeaderBox, HeaderItem1, Logo, SelectDiv , Img , SelectMenu, Options, HeaderItem2, Imgdiv} from "./header.js"
 import { NavLink as Link } from "react-router-dom"
 
-import Counter from "../parts/counter/counter.jsx"
+import Counter  from "../counter/counter.jsx"
 
 import header1 from "../../assets/img/logo_header.png"
 import header2 from "../../assets/img/phone_header.png"
