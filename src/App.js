@@ -1,6 +1,7 @@
 import styled, { createGlobalStyle } from "styled-components";
 
- const GlobalStyle = createGlobalStyle` 
+
+const GlobalStyle = createGlobalStyle` 
 *,
 *::before,
 *::after {
@@ -29,13 +30,6 @@ img {
 button {
   border: none;
   cursor: pointer;
-}
-
-.container {
-  max-width: 100%;
-  width: 1110px;
-  margin: 0 auto;
-  padding: 0 20px;
 }
 `
 
